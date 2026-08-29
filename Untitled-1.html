@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Enderlily's Random Info Website :P</title>
+	<link rel="stylesheet" href="styles.css">
+	<link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+	<style>
+
+/*Styles Off-sheet*/
+
+html {
+	scroll-behavior: smooth;
+	background: linear-gradient(-45deg, #570763, #000000, #12042b, #000000);
+	background-size: 400% 500%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+h1 {
+	font-family: 'Nunito', sans-serif;
+	text-align: center;
+	animation: textglow 2s ease infinite;
+	font-weight: bold;
+}
+
+h2 {
+	font-family: 'Nunito', sans-serif;
+	text-align: center;
+	animation: textglow 2s ease infinite;
+	font-weight: bold;
+}
+
+p {
+	font-family: 'Comfortaa', sans-serif;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+ul.navbar {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(31, 16, 34, 0.99);
+  box-shadow: 0 0 10px #4b0062, 0 0 20px #87008f;
+  border-radius: 10px;
+}
+
+ul:hover.navbar {
+  box-shadow: 0 0 15px #4b0062, 0 0 30px #87008f;
+  transition: box-shadow 0.3s ease;}
+ul li .navbar {
+  float: left;
+}
+
+ul.navbar li a {
+  display: block;
+  font-family: 'Comfortaa', sans-serif;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.navbar li a:hover {
+  background-color: #19001f;
+  box-shadow: 0 0 10px #c300ff, 0 0 20px #f200ff;
+  text-shadow: 0 0 5px #c300ff, 0 0 10px #f200ff;
+  font-weight: bold;
+  transition: text-shadow 0.3s ease, box-shadow 0.3s ease;
+}
+
+ul.navbar {
+  position: sticky;
+  top: 0;
+}
+
+img.allowglow {
+	display: block;
+	margin: 1em auto;
+	border-radius: 30px;
+	animation: imageglowpulse 7s ease infinite;
+}
+hr {
+	border: 1px dashed rgb(28, 0, 41);
+	margin: 20px 0;
+	text-shadow: 0 0 10px #4b0062, 0 0 20px #87008f;
+}
+
+div.tablecontainer {
+	overflow-x: auto;
+}
+
+table.linktable {
+	margin: auto;
+	padding: 20px;
+	max-width: 60%;
+}
+
+th.linktable, td.linktable {
+	padding: 20px;
+	text-align: center;
+
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgb(24, 0, 29, 0.3);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+.dropdown {
+	position: relative;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	font-family: 'Comfortaa', sans-serif;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	font-weight: 400;
+	background: linear-gradient(-45deg, #150017, #150017, #000000, #000000);
+	background-size: 400% 400%;
+	border-radius: 30px;
+	padding: 20px 12px;
+	z-index: 100;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+	animation: dropdownfade 0.5s ease, imageglowpulse 7s ease infinite, gradient 7s ease infinite;
+}
+
+/*Animation Keyframes*/
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes textglow {
+	0% {
+		text-shadow: 0 0 5px #af00e9, 0 0 10px #e492ff;
+	}
+	50% {
+		text-shadow: 0 0 10px #af00e9, 0 0 20px #e492ff;
+	}
+	100% {
+		text-shadow: 0 0 5px #af00e9, 0 0 10px #e492ff;
+	}
+}
+
+@keyframes imageglowpulse {
+	0% {
+		box-shadow: 0 0 5px #af00e9, 0 0 10px #e492ff;
+	}
+	50% {
+		box-shadow: 0 0 10px #af00e9, 0 0 20px #e492ff;
+	}
+	100% {
+		box-shadow: 0 0 5px #af00e9, 0 0 10px #e492ff;
+	}
+}
+
+@keyframes warninggradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes dropdownfade {
+	0% {
+		opacity: 0%;
+	}
+	100% {
+		opacity: 100%;
+	}
+}
+
+	</style>
+</head>
+
+<head>
+	<body>
+		<ul class="navbar" style="z-index:9;">
+ 			<li><a class="navbar" href="#home">Home</a></li>
+			<li><a class="navbar" href="#about">About</a></li>
+			<li><a class="navbar" href="#links">Links</a></li>
+		</ul>
+	</body>
+</head>
+<body>
+	<div class="warning-wrap">
+		<input type="checkbox" id="dismiss-warning" class="warning-toggle" hidden>
+		<label for="dismiss-warning" class="warning-close" aria-label="Dismiss warning">&times;</label>
+		<p class="box-warning">Warning! <br> This site is best viewed on a desktop. <br> If you're on mobile, you might want to switch to desktop mode for the best experience.</p>
+	</div>
+</body>
+<body>
+	<div id="home"></div>
+		<h1 class="white">WOW ITS REAL</h1>
+		<p class="white">kinda forgot what to put here :P</p>
+		<img class="allowglow" style="pointer-events: none;" src="https://i.ibb.co/zWXNkdVs/Untitled258-20260110233142-2.png" alt="Me!" style="height: auto; max-width: 100%; border-radius: 30px;">
+	</div>
+</body>
+<hr style="border: 1px dashed rgb(28, 0, 41); margin: 20px 0;">
+<body> 
+	<div id="about">
+		<h1 class="white">About Me!</h1>
+	</div>
+	<div class="box-text">
+		<p class="white">I'm Ender, or Lilith, a small Canadian VTuber who enjoys mainly gaming themed content, but also doing literally anything that my attention span can last for.</p>
+		<p class="white">Whether I'm making content, experimenting with new ideas, or working on personal projects, I'm always looking for something creative to dive into, like this website!</p>
+		<p class="white">While i'm not livestreaming or making videos, I like to:</p>
+	</div>
+	<div>
+		<ul class="box-list font-regular">
+			<div class="dropdown">
+				<li class="white">Playing Games</li>
+				<div class="dropdown-content">
+					<h1 class="white" style="font-size: medium">Playing Games</h1>
+					<p class="white">Currently, I love playing a variety of different games, with some of my favorite game genres being:</p>
+					<ul class="font-regular">
+						<li class="white">Rhythm / Music games</li>
+						<li class="white">Sandbox games</li>
+						<li class="white">Deck-building games</li>
+						<li class="white">Roguelike games</li>
+					</ul>
+					<hr>
+					<p class="white">Among these genres lie some of my more favored games in my library.</p>
+					<ul class="font-regular">
+						<li class="white">osu!</li>
+						<li class="white">Terraria</li>
+						<li class="white">Cult of the Lamb</li>
+						<li class="white">Minecraft</li>
+					</ul>
+				</div>
+			</div>
+			<div class="dropdown">
+				<li class="white">Listening to Music</li>
+				<div class="dropdown-content">
+					<h1 class="white" style="font-size: medium">Listening to Music</h1>
+					<p class="white">When it comes to music, I mainly like listening to:</p>
+					<ul class="font-regular">
+						<li class="white">J-ROCK</li>
+						<li class="white">J-POP</li>
+						<li class="white">Vocaloid</li>
+					</ul>
+					<p class="white">all of which show how much of a weeb I am :3</p>
+				</div>
+			</div>
+			<div class="dropdown">
+				<li class="white">Photography</li>
+				<div class="dropdown-content">
+					<h1 class="white" style="font-size: medium">Photography</h1>
+					<p class="white">Although I am learning more about it, sometimes in my freetime I tend to take photo's of the area around me.</p>
+					<p class="white">I prefer taking photo's of a scenery, or anything that looks liminal themed.</p>
+				</div>
+			</div>
+			<li class="white">I forgot the others :P</li>
+		</ul>
+	</div>
+	<div>
+		<h2 class="white">My Goal</h2>
+		<p class="white">My main goal I hope to reach as a VTuber is to create a nice and welcoming community for everyone to enjoy.</p>
+		<p class="white">As long as I am able to create a safe space for others to be in, i've accomplished my goal :)</p>
+	</div>
+</body>
+<hr style="border: 1px dashed rgb(28, 0, 41); margin: 20px 0;">
+</body>
+<body>
+	<div id="links">
+		<h1 class="white">My Links (and where you can find me)</h1>
+	</div>
+	<div class="tablecontainer">
+		<table class="linktable">
+			<tr>
+				<td class="linktable"> <a href="https://www.twitch.tv/enderblaze7879" target="_blank"><img src="images/twitch_logo.png" alt="Twitch" width="auto" height="80"></a></td>
+				<td class="linktable"> <a href="https://www.youtube.com/@enderlily7879" target="_blank"><img src="images/youtube_logo.png" alt="YouTube" width="auto" height="110"></a></td>
+				<td class="linktable"> <a href="https://discord.gg/eCwXdGVXqS" target="_blank"><img src="images/discord_logo.png" alt="Discord" width="auto" height="70"></a></td>
+				<td class="linktable"> <a href="https://osu.ppy.sh/users/36292093" target="_blank"><img src="images/osu!_logo@2x.png" alt="osu!" width="auto" height="80"></a></td>
+				<td class="linktable"> <a href="https://bsky.app/profile/enderblaze7879.bsky.social" target="_blank"><img src="images/bluesky_logo.png" alt="Bluesky" width="auto" height="80"></a></td>
+				<td class="linktable"> <a href="https://throne.com/enderblaze7879" target="_blank"><img src="images/throne_logo.png" alt="Throne" width="auto" height="100"></a></td>
+				<td class="linktable"> <a href="https://www.instagram.com/enderblaze7879" target="_blank"><img src="images/instagram_logo.png" alt="Instagram" width="auto" height="80"></a></td>
+			</tr>
+			<tr>
+				<th class="white font-regular linktable">Twitch</th>
+				<th class="white font-regular linktable">YouTube</th>
+				<th class="white font-regular linktable">Discord</th>
+				<th class="white font-regular linktable">osu!</th>
+				<th class="white font-regular linktable">Bluesky</th>
+				<th class="white font-regular linktable">Throne</th>
+				<th class="white font-regular linktable">Instagram</th>
+			</tr>
+		</table>
+	</div>
+	<div class="box-text">
+		<p class="white">Links may be updated in the future!</p>
+	</div>
+</body>
+<hr style="border: 1px dashed rgb(28, 0, 41); margin: 20px 0;">
+<div class="footer">
+	<body>
+  		<p class="footer-text">© 2026 EnderBlaze7879 (Enderlily7879)</p>
+		<p class="footer-text">Website made by me :D</p>
+	</body>
+</div>
+</html>
