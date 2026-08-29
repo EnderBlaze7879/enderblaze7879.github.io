@@ -1,0 +1,130 @@
+
+/*Colors*/
+.red { 
+    color: rgb(255, 0, 0); 
+}
+.redorange { 
+    color: rgb(255, 69, 0); 
+}
+.orange { 
+    color: rgb(255, 165, 0); 
+}
+.yellow { 
+    color: rgb(255, 255, 0); 
+}
+.green { 
+    color: rgb(0, 255, 0); 
+}
+.cyan { 
+    color: rgb(0, 255, 255); 
+}
+.blue { 
+    color: rgb(0, 0, 255); 
+}
+.indigo { 
+    color: rgb(75, 0, 130); 
+}
+.purple { 
+    color: rgb(153, 0, 255); 
+}
+.pink { 
+    color: rgb(255, 89, 225); 
+}
+.grey { 
+    color: rgb(128, 128, 128); 
+}
+.brown { 
+    color: rgb(84, 61, 5); 
+}
+.black { 
+    color: rgb(0, 0, 0); 
+}
+.white { 
+    color: rgb(255, 255, 255); 
+}
+
+/*Text Styles*/
+.bold { 
+    font-weight: bold; 
+}
+.italic { 
+    font-style: italic; 
+}
+.strike { 
+    text-decoration: line-through; 
+}
+.underline { 
+    text-decoration: underline; 
+}
+
+.font-regular { /*because some elements don't inherit it by default*/
+    font-size: 20px; 
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.footer-text {
+    font-size: 12px; 
+    font-family: 'Comfortaa', sans-serif;
+    opacity: 0.75;
+    text-align: center;
+}
+/*Box Styles*/
+.box-plain { 
+    border: 2px solid black; 
+    padding: 10px; 
+    margin: 10px; 
+    border-radius: 5px; 
+    text-align: center; 
+}
+.box-text {
+    margin: auto;
+    width: 75%;
+    text-align: center;
+}
+.box-warning { 
+    border: 2px dashed red; padding: 10px; margin: 0;
+    border-radius: 5px;
+    text-align: center; 
+    background: linear-gradient(124deg,rgba(255, 0, 0, 1) 0%, rgba(112, 4, 4, 1) 100%, rgba(143, 20, 20, 1) 55%);
+    background-size: 200% 200%;
+    animation: warninggradient 3s ease infinite;
+}
+.warning-wrap {
+    position: relative;
+    margin: 10px;
+}
+.warning-toggle {
+    display: none;
+}
+.warning-close {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2;
+    line-height: 1;
+}
+.warning-close:hover {
+    color: #ffd5d5;
+}
+.warning-toggle:checked ~ .warning-close,
+.warning-toggle:checked ~ .box-warning {
+    display: none;
+}
+.box-info { 
+    border: 2px solid blue; 
+    padding: 10px; 
+    margin: 10px; 
+    border-radius: 5px; 
+    text-align: center; 
+}
+
+.box-list {
+    width: 300px;
+    padding: 5px;
+    margin: auto;
+    text-align: left;
+}
